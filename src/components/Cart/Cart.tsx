@@ -11,7 +11,7 @@ class Cart extends Component {
     return (
       <section>
         <ProductConsumer>
-          {value => {
+          {(value:any) => {
             const { cart } = value;
             if (cart.length > 0) {
               return (

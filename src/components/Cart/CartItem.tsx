@@ -1,6 +1,7 @@
 import React from "react";
+import {Cartiteminterface} from '../../interfaces/Cartiteminterface'
 
-export default function CartItem({ value, item }) {
+export default function CartItem({item,value}:Cartiteminterface) {
   const { id, title, img, price, total, count } = item;
   const { increment, decrement, removeProduct } = value;
   return (

@@ -11,6 +11,7 @@
 //we can check types of our props in two ways 
 // A: export class PokemonSearch extends Component <{name:string,numberOfPokemons:number}>{}
 // B: or using interfaces==>  export class PokemonSearch extends Component <User>
+// C: in functional component export default function CartItem({item,value}:Cartiteminterface){}
 
 
 // using ref in typescript ==>  pokeRef:React.RefObject<HTMLInputElement>

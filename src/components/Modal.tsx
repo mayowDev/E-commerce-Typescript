@@ -8,7 +8,7 @@ export default class Modal extends Component {
   render() {
     return (
       <ProductConsumer>
-        {value => {
+        {(value:any) => {
           const { modalOpen, closeModal } = value;
           const { img, title, price } = value.modalProduct;
 

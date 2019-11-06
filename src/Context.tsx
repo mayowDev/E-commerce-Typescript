@@ -2,7 +2,7 @@ import React, { Component} from "react";
 import ContextInterface from './interfaces/ContextInterface'
 import { storeProducts, detailProduct } from "./data";
 import {Mystate} from './interfaces/ContextInterface';
-import {myMethods} from './interfaces/ContextInterface'
+
 
 
 
