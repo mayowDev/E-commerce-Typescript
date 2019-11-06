@@ -1,0 +1,17 @@
+typescript with react from classes
+
+
+make it optional ==> name?:string 
+we  make modular/interfaces if we need same props in other components create folder of interfaces 
+
+
+//we check types in of props in child element where we importing 
+
+//we can check types of our props in two ways 
+// A: export class PokemonSearch extends Component <{name:string,numberOfPokemons:number}>{}
+// B: or using interfaces==>  export class PokemonSearch extends Component <User>
+
+
+// using ref in typescript
+
+ // pokeRef:React.RefObject<HTMLInputElement>
