@@ -1,17 +1,19 @@
-typescript with react from classes
+=========================================typescript with react======================================
 
+-npx create-react-app . --typescript
+-npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
-make it optional ==> name?:string 
-we  make modular/interfaces if we need same props in other components create folder of interfaces 
+-npm install @types/react-router-dom
+-also check other other @types that your missing
 
-
-//we check types in of props in child element where we importing 
+//we check types  of props in child element where we importing 
 
 //we can check types of our props in two ways 
 // A: export class PokemonSearch extends Component <{name:string,numberOfPokemons:number}>{}
 // B: or using interfaces==>  export class PokemonSearch extends Component <User>
 
 
-// using ref in typescript
+// using ref in typescript ==>  pokeRef:React.RefObject<HTMLInputElement>
 
- // pokeRef:React.RefObject<HTMLInputElement>
+-make it optional ==> name?:string 
+-we  make modular/interfaces if we need same props in other components create folder of interfaces 
