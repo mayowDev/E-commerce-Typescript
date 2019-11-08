@@ -220,4 +220,4 @@ class ProductProvider extends Component <ContextInterface>{
 }
 const ProductConsumer = ProductContext.Consumer;
 // const Provider=ProductContext.Consumer;
-export { ProductConsumer, ProductProvider };
+export  { ProductConsumer, ProductProvider };
