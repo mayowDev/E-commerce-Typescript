@@ -8,18 +8,31 @@ export default interface ContextInterface{
     removeProduct: (id: string) => void;
     clearCart: () => void;
     cartTotal: number; 
+
+
+    // detailproduct types
+
+    id:any;
+    title:string;
+    inCart:boolean;
+    count:number;
+    total:number;
+    price:number;
+    info:string;
+    company:string;
+    img:string;
     
 
 }
 
 
-// ==== types for state ===
+
 type Product = {
     id: string,
     name: string,
     price: number
 }
-
+// ==== types for state ===
 export type Mystate={
     products:Product[],
     cart:string[],
@@ -44,10 +57,15 @@ export type Mystate={
     cartTotal:number, 
   
   }
-
-
-// export type myMethods={
-//     inCart: boolean;
-//     count: number;
-
-//   }
+export type valtype={
+  id:any;
+    title:string;
+    inCart:boolean;
+    count:number;
+    total:number;
+    price:number;
+    info:string;
+    company:string;
+    img:string;
+    
+}

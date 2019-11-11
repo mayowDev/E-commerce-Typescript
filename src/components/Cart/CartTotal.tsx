@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-export default function CartTotal({ value }) {
+export default function CartTotal({ value }:any) {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
   return (
     <Fragment>
@@ -12,7 +12,7 @@ export default function CartTotal({ value }) {
             <Link to='/'>
               <button
                 className='btn btn-outline-danger text-uppercase mb-3 px-5'
-                type='buttton'
+                // type='buttton'
                 onClick={() => clearCart()}
               >
                 Clear Cart

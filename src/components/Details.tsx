@@ -3,11 +3,15 @@ import { ProductConsumer } from "../Context";
 import { Link } from "react-router-dom";
 import { ButtonContainer } from "./Button";
 
+
+
+
+
 class Details extends Component {
   render() {
     return (
       <ProductConsumer>
-        {value => {
+        {(value:any) => {
           const {
             title,
             inCart,
@@ -52,8 +56,9 @@ class Details extends Component {
                     <Link to='/'>
                       <ButtonContainer>Back to products</ButtonContainer>
                     </Link>
-                    <ButtonContainer
-                      cart
+                    
+                    <ButtonContainer 
+                      // cart
                       disabled={inCart ? true : false}
                       onClick={() => {
                         value.addToCart(id);

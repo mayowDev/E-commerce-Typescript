@@ -18,3 +18,17 @@
 
 -make it optional ==> name?:string 
 -we  make modular/interfaces if we need same props in other components create folder of interfaces 
+
+=========================Adding Redux to react-Typescript ===============
+
+ npm install --save react-redux
+ npm install --save @types/react-redux
+ npm i redux-thunk
+ npm i redux-devtools-extension
+
+
+ ===>setting up redux
+
+-store.js file in src folder{store takes things: thunk, initialState,rootReducer}
+-Reducer folder->rootReducer.js{her is where we combine all reducers using combineReducers()}
+-Actions {Her we set types.js and all other actions, like productAction.js}

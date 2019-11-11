@@ -67,7 +67,7 @@ class ProductProvider extends Component <ContextInterface>{
       }
     );
   };
-  // openModal when we click icon cart plus
+  // openModal when we click incart icon
   openModal = (id:string) => {
     const product = this.getItem(id);
     this.setState(() => {
@@ -81,7 +81,7 @@ class ProductProvider extends Component <ContextInterface>{
       return { modalOpen: false };
     });
   };
-  // handleDetail
+  // handleDetail/single productdetail page
   handleDetail = (id:string) => {
     const product = this.getItem(id);
     this.setState(() => {

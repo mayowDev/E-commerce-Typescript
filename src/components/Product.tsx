@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { ProductConsumer } from "../Context";
+import { ProductConsumer } from '../Context';
 
 class Product extends Component <{product:any}>{
+  
   render() {
     const { id, title, img, price, inCart } = this.props.product;
     return (
@@ -29,7 +30,7 @@ class Product extends Component <{product:any}>{
                   }}
                 >
                   {inCart ? (
-                    <p className='text-capitalize mb-0' disabled>
+                    <p className='text-capitalize mb-0' >
                       inCart
                     </p>
                   ) : (
